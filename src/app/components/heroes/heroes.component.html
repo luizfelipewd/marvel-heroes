@@ -1,0 +1,27 @@
+<div class="container-fluid" id="heroes">
+  <hr class="mt-2 mb-5" />
+
+  <div class="row text-center text-lg-left">
+    <div
+      class="col-lg-3 col-md-4 col-6"
+      *ngFor="let character of allCharacters | async"
+    >
+      <a routerLink="/hero/{{ character.id }}" class="d-block mb-4">
+        <div class="card bg-dark text-white">
+          <img
+            src="{{ character.thumbnail.path }}.{{
+              character.thumbnail.extension
+            }}"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h3 class="card-title" style="text-shadow: 2px 2px 5px black">
+              {{ character.name }}
+            </h3>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

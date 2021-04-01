@@ -1,0 +1,9 @@
+img {
+  -webkit-mask-image: linear-gradient(to right, transparent 10%, black 100%);
+}
+
+@media (max-width: 823px) {
+  img {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 10%, black 100%);
+  }
+}

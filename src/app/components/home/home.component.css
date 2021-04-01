@@ -1,0 +1,17 @@
+#hero-home {
+  margin-top: 10rem;
+}
+
+#hero-home .display-2 {
+  font-weight: 900 !important;
+}
+
+#hero-img {
+  margin-right: 0%;
+}
+
+@media (max-width: 823px) {
+  #hero-home {
+    margin-top: 5rem;
+  }
+}

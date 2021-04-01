@@ -1,0 +1,18 @@
+#heroes img {
+  height: 25rem;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  #heroes img {
+    height: 20rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 823px) {
+  #heroes img {
+    height: 15rem;
+    width: 100%;
+  }
+}

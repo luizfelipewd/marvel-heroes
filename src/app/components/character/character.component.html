@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1 class="display-2 text-white px-3">{{ character.name }}</h1>
+      <p class="lead text-white px-3">
+        {{ character.description }}
+      </p>
+      <hr />
+      <a
+        href="{{ character.urls[0].url }}"
+        target="blank"
+        class="btn btn-lg btn-outline-light"
+        >Ver mais</a
+      >
+    </div>
+    <div class="col-lg-6">
+      <img
+        src="{{ character.thumbnail.path }}.{{ character.thumbnail.extension }}"
+        class="w-100"
+        alt="..."
+      />
+    </div>
+  </div>
+</div>

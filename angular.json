@@ -7,8 +7,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "inlineTemplate": true,
-          "inlineStyle": true,
+          "inlineTemplate": false,
+          "inlineStyle": false,
           "skipTests": true
         },
         "@schematics/angular:class": {
@@ -104,6 +104,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "marvel-heroes"
+    }
+  },
+  "defaultProject": "marvel-heroes",
+  "cli": {
+    "analytics": "adb4b03c-2497-435b-b57e-d6b35310264f"
+  }
 }
